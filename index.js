@@ -22,13 +22,19 @@ const generateReadMe = ({ title, description, installation, usage, contribution,
     ${installation}
     
 ## Usage
+
+    ${usage}
     
 ## License
     
 ## How to Contribute
-    
+
+    ${contribution}
+
 ## Tests
     
+    ${tests}
+
     `;
 
 inquirer
@@ -48,12 +54,27 @@ inquirer
             name: 'installation',
             message: 'Describe how users will install your application:'
         },
+        {
+            type: 'input',
+            name: 'usage',
+            message: 'Provide instructions and examples for use:'
+        },
+        {
+            type: 'input',
+            name: 'contribution',
+            message: 'How can people contribute to your project?'
+        },
+        {
+            type: 'input',
+            name: 'tests',
+            message: 'Describe how to test your application:'
+        }
     ])
     .then((answers) => {
         const readMeContent = generateReadMe(answers);
 
         fs.writeFile('README.md', readMeContent, (err) =>
-            err ? console.log(err) : console.log('Successfullly created README.md!')
+            err ? console.log(err) : console.log('Successfully created README.md!')
         )
     })
 
