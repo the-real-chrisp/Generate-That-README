@@ -35,7 +35,7 @@ ${renderLicenseBadge(data.license)}
 
 ## Description
     
-    ${data.description}
+${data.description}
     
 ## Table of Contents
     
@@ -46,24 +46,27 @@ ${renderLicenseLink(data.license)}
     
 ## Installation
     
-    ${data.installation}
+${data.installation}
     
 ## Usage
 
-    ${data.usage}
+${data.usage}
     
 ## How to Contribute
 
-    ${data.contribution}
+${data.contribution}
 
 ## Tests
     
-    ${data.tests}
+${data.tests}
 
 ## Questions:
 
-    Link to GitHub: [GitHub](github.com/${data.github})
-    Send email if you have questions or want to contribute: [Email](${data.email})
+Link to GitHub:
+[GitHub](https://github.com/${data.github})
+    
+Send email if you have questions or want to contribute:
+${data.email}
 
 ${renderLicenseSection(data.license)}
 `;

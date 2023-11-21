@@ -1,9 +1,9 @@
-# Title
+# Title title
 [![License: Mit](https://img.shields.io/badge/License-Mit-yellow.svg)](https://opensource.org/licenses/Mit)
 
 ## Description
     
-Does things
+Desbribed
     
 ## Table of Contents
     
@@ -14,27 +14,28 @@ Does things
     
 ## Installation
     
-Install it
+Install it fast 
     
 ## Usage
 
-Examples 1, Examples 2
+Step 1 Step 2
     
 ## How to Contribute
 
-Code something
+Send an email
 
 ## Tests
     
-Test it please
+Test it thoroughly
 
 ## Questions:
 
-Link to GitHub: 
-[GitHub](github.com/the-real-chrisp)
-Send email if you have questions or want to contribute: 
-[Email](chrisp0000@gmail.com)
+Link to GitHub:
+[GitHub](https://github.com/the-real-chrisp)
+    
+Send email if you have questions or want to contribute:
+test@test.com
 
 ## License
-This project is under Mit license.
+    This project is under Mit license.
   
