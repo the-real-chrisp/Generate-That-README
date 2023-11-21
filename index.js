@@ -1,14 +1,60 @@
-// TODO: Include packages needed for this application
 const inquirer = require('inquirer');
+const fs = require('fs');
+const generateMarkdown = require("./utils/generateMarkdown.js")
 
-// TODO: Create an array of questions for user input
-const questions = [];
+inquirer
+    .prompt([
+        {
+            type: 'input',
+            name: 'title',
+            message: 'What is the title of your project?'
+        },
+        {
+            type: 'input',
+            name: 'description',
+            message: 'Provide a description for your project:'
+        },
+        {
+            type: 'input',
+            name: 'installation',
+            message: 'Describe how users will install your application:'
+        },
+        {
+            type: 'input',
+            name: 'usage',
+            message: 'Provide instructions and examples for use:'
+        },
+        {
+            type: 'input',
+            name: 'contribution',
+            message: 'How can people contribute to your project?'
+        },
+        {
+            type: 'input',
+            name: 'tests',
+            message: 'Describe how to test your application:'
+        },
+        {
+            type: 'input',
+            name: 'github',
+            message: 'Please enter GitHub username:'
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: 'Please enter in email:'
+        },
+        {
+            type: 'list',
+            name: 'license',
+            message: 'Select a license for your project or select none:',
+            choices: ['Mit', 'none']
+        }
+    ])
+    .then((answers) => {
+        const readMeContent = generateMarkdown(answers);
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-init();
+        fs.writeFile('README.md', readMeContent, (err) =>
+            err ? console.log(err) : console.log('Successfully created README.md!')
+        )
+    })
