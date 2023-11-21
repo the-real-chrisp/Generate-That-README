@@ -39,10 +39,10 @@ ${renderLicenseBadge(data.license)}
     
 ## Table of Contents
     
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [Credits](#credits)
-    - ${renderLicenseLink(data.license)}
+[Installation](#installation)
+[Usage](#usage)
+[Questions](#questions)
+${renderLicenseLink(data.license)}
     
 ## Installation
     
@@ -59,6 +59,11 @@ ${renderLicenseBadge(data.license)}
 ## Tests
     
     ${data.tests}
+
+## Questions:
+
+    Link to GitHub: [GitHub](github.com/${data.github})
+    Send email if you have questions or want to contribute: [Email](${data.email})
 
 ${renderLicenseSection(data.license)}
 `;

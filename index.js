@@ -35,6 +35,16 @@ inquirer
             message: 'Describe how to test your application:'
         },
         {
+            type: 'input',
+            name: 'github',
+            message: 'Please enter GitHub username:'
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: 'Please enter in email:'
+        },
+        {
             type: 'list',
             name: 'license',
             message: 'Select a license for your project or select none:',
