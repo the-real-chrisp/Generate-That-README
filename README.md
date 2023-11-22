@@ -23,7 +23,9 @@ First step, is to navigate into the application file in your command line. Or if
 Example output:
 
 ![Example of README](./images/README-Screenshot.png)
-    
+
+[Node.js Challenge 9 Video.zip](https://github.com/the-real-chrisp/Generate-That-README/files/13432234/Node.js.Challenge.9.Video.zip)
+
 ## How to Contribute
 
 Please send me an email with the email provided below.
