@@ -19,6 +19,10 @@ The first thing to do is to clone the repo to your local system. Once you've set
 ## Usage
 
 First step, is to navigate into the application file in your command line. Or if using a code editor, open the integrated terminal. Next step, run "node index" and you should be given the first prompt. Complete the remaining prompts and once done your terminal will log a success message. Then you'll find a freshly minted README.
+
+Example output:
+
+![Example of README](./images/README-Screenshot.png)
     
 ## How to Contribute
 
